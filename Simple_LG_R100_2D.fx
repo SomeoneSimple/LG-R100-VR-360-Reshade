@@ -24,7 +24,7 @@ float4 FlipPass(float4 vpos : SV_Position, float2 texcoord : TexCoord) : SV_Targ
 {
 	float2 tempcoord;
 
-	float2 coordL = texcoord;		// right eye
+	float2 coordL = texcoord;		// left eye
 	coordL.x = 1-coordL.x;			// invert X
 	coordL.y = coordL.y - 0.5; 		// offset Y to center
 	coordL.x = coordL.x - 0.75;		// offset X to 25%
@@ -33,7 +33,7 @@ float4 FlipPass(float4 vpos : SV_Position, float2 texcoord : TexCoord) : SV_Targ
 	tempcoord.y = coordL.x; 		// vertical rotate
 	coordL = tempcoord;
 
-	float2 coordR = texcoord;		// left eye
+	float2 coordR = texcoord;		// right eye
 	coordR.y = 1-coordR.y;			// invert Y
 	coordR.y = coordR.y - 0.5; 		// offset Y to center
 	coordR.x = coordR.x - 0.75;		// offset X to 75%
