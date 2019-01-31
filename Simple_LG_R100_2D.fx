@@ -6,7 +6,7 @@
 // Typically this should be loaded last in Reshade. 						  											// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Built on top of Marty McFly's flip shader: https://reshade.me/forum/shader-discussion/3009-flip-and-mirror-entire-image
-// Should be combined with BlueSkyDefender's Polynomial-Barrel-Distortion shader to fix the (minimal) barrel distortion, 
+// Should be combined with BlueSkyDefender's Polynomial-Barrel-Distortion shader to fix the (minimal) pincushion distortion, 
 // and/or aspect ratio when using non-native resolutions (as in not 1440x960, e.g. 1080p/1440p):
 // https://github.com/BlueSkyDefender/Depth3D/blob/master/Shaders/Polynomial_Barrel_Distortion.fx
 
